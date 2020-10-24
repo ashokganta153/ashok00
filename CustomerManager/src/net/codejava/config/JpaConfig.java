@@ -19,6 +19,14 @@ public class JpaConfig {
         factoryBean.setPersistenceUnitName("SalesDB");
          
         return factoryBean;
+        
+        
+        
+        
+        
+        
+        
+        
     }
      
     @Bean
@@ -26,6 +34,11 @@ public class JpaConfig {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(entityManagerFactory);
          
+    
+        
         return transactionManager;
     }  
+    
+    
+    
 }
